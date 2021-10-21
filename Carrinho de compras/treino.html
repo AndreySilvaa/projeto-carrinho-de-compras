@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/698b380f29.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <abbr title="KaBuM! Tecnologia e Games"><a href="#"><img src="img/Kabum-black.png" alt=""></a></abbr>
+        <input type="text" name="" id="" value="" placeholder="Busque Aqui">
+        <div>
+            <img src="img/login.png" alt="">
+            <p>Faça <a href="#">login</a> ou crie seu <a href="#">cadastro</a></p>
+        </div>
+        <div class="icones">
+            <a href=""><i class="fas fa-headset"></i><div>SAC</div></a>
+            <a href=""><i class="fas fa-heart"></i><div>FAVORITOS</div></a>
+            <a href=""><i class="fas fa-shopping-cart"></i><div>CARRINHO</div></a>
+        </div>
+    </header>
+
+    <nav>
+        <a href="" class="janela"><li>TODOS OS DEPARTAMENTOS <i class="fas fa-sort-down"></i></li>
+            <section class="janelaitens">
+                <div>
+                    <li>Hardware</li> <i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Serviços Digitais</li> <i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Periféricos </li> <i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Gamer </li><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Cadeiras </li><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Computadores </li><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>TV</li><i class="fas fa-chevron-right"></i>
+                </div>
+                <div>
+                    <li>Celular & Telefone</li><i class="fas fa-chevron-right"></i>
+                </div>
+            </section>
+        </a>
+        <a href="">
+            <li>LANÇAMENTOS</li>
+        </a>
+        <a href="">
+            <li>DESTAQUES</li>
+        </a>
+        <a href="">
+            <li>PC GAMER</li>
+        </a>
+        <a href="">
+            <li>ELETRÔNICOS</li>
+        </a>
+        <a href="">
+            <li>SEJA PRIME</li>
+        </a>
+    </nav>
+    
+
+    <section class="produtos">
+        <a href="#l">
+            <div id="cx1">
+                <img src="img/drone.png" alt="">
+                <p>Drone Dji Mavic Air 2 Combo</p>
+                <h1 id="cx1valor">R$ 9899,90</h1>
+            </div>
+        </a>
+
+        <a href="#l">
+            <div id="cx2">
+                <img src="img/note.png" alt="">
+                <p>Notebook Gamer XPG Xenia 2070 Max-Q </p>
+                <h1 id="cx2valor">R$ 17689,90</h1>
+            </div>
+        </a>
+
+        <a href="#l">
+            <div id="cx3">
+                <img src="img/relogio.png" alt="">
+                <p>EXOSPACE B55
+                    Titânio - Preto</p>
+                <h1 id="cx3valor">R$ 1256,89</h1>
+            </div>
+        </a>
+
+        <a href="#l">
+            <div id="cx4">
+                <img src="img/zenfone7.png" alt="">
+                <p>Smartphone ASUS ZenFone 7 - Preto</p>
+                <h1 id="cx4valor">R$ 4896,00</h1>
+            </div>
+        </a>
+    </section>
+
+    <section class="compra">
+        <DIV>
+            <li>(1) DRONE</li>
+            <li>(2) NOTEBOOK</li>
+            <li>(3) RELÓGIO</li>
+            <li>(4) CELULAR</li>
+        </DIV>
+        <hr>
+        <div class="selectitem">
+            <input type="number" name="" id="itemnumtxt">
+            <input type="button" value="ADICIONAR" id="botaoadd" onclick="addpro()">
+            <input type="button" value="REMOVER" id="botaoremo" onclick="remopro()">
+        </div>
+        <hr>
+        <DIV class="comprafim">
+            <img src="img/carrinho-compras.png" alt="">
+            <h2 id="custo">R$ 00,00</h2>
+        </DIV>
+
+        <a href="#botaocomprar" class="botaocomprar" onclick="finalizar()">
+           COMPRAR
+        </a>
+    </section>
+
+    <footer>
+        <div>
+            <h2>KaBuM! News</h2>
+            <p>Receba ofertas exclusivas no seu e-mail</p>
+        </div>
+        <div class="cadastro">
+            <input type="text" name="" id="" value="" placeholder="Qual é o seu nome?">
+            <input type="text" name="" id="" value="" placeholder="Seu e-mail?">
+            <a href="#a">CADASTRAR</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+   
+</body>
+</html>
