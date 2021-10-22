@@ -17,6 +17,7 @@ var cx4valor = document.getElementById('cx4valor')
 var janela
 var janelaitens
 var exi = 0
+var seta
 
 
 
@@ -209,16 +210,22 @@ function finalizar() {
 function exibir(){
     if (exi == 0){
         janelaitens.style.display = "block"
+        janela =document.querySelector(".janela").style.backgroundColor = "#803100"
         exi = 1
-    } else if(exi = 1) {
+        seta.style.transitionDuration = "1s"
+        seta.style.transform = "rotate(180deg)"
+    } else {
         janelaitens.style.display = "none"
+        janela =document.querySelector(".janela").style.backgroundColor = "#FF5101"
+        seta.style.transform = "rotate(0deg)"
         exi = 0
     }
 }
 
 function addevento() {
-    janela = document.querySelector(".janela").addEventListener("click", exibir)
     janelaitens = document.querySelector(".janelaitens")
+    janela = document.querySelector(".janela").addEventListener("click", exibir)
+    seta = document.getElementById("seta")
 }
 
 window.addEventListener("load", addevento)

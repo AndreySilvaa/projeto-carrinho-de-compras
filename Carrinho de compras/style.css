@@ -81,15 +81,18 @@ nav a {
     right: -5px;
     top: -1px;
 }
-
+/*
 .janela:hover {
     background-color: #803100;
 }
+*/
 
+/*
 .janela:hover > li > i {
     transition-duration: 1s;
     transform: rotate(180deg);
 }
+*/
 
 nav li {
     list-style: none;
