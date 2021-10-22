@@ -14,6 +14,9 @@ var cx3 = document.getElementById('cx3')
 var cx3valor = document.getElementById('cx3valor')
 var cx4 = document.getElementById('cx4')
 var cx4valor = document.getElementById('cx4valor')
+var janela
+var janelaitens
+var exi = 0
 
 
 
@@ -200,3 +203,22 @@ function finalizar() {
        valorcompra = 0
     }
 }
+
+// Exibir janela de itens
+
+function exibir(){
+    if (exi == 0){
+        janelaitens.style.display = "block"
+        exi = 1
+    } else if(exi = 1) {
+        janelaitens.style.display = "none"
+        exi = 0
+    }
+}
+
+function addevento() {
+    janela = document.querySelector(".janela").addEventListener("click", exibir)
+    janelaitens = document.querySelector(".janelaitens")
+}
+
+window.addEventListener("load", addevento)

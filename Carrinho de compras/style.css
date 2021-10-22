@@ -91,10 +91,6 @@ nav a {
     transform: rotate(180deg);
 }
 
-.janela:hover > .janelaitens {
-    display: block;
-}
-
 nav li {
     list-style: none;
     padding: 8px 15px;
@@ -131,7 +127,6 @@ nav li {
 }
 
 .janela:hover > .janelaitens {
-    display: block;
     justify-content: space-between;
 }
 
